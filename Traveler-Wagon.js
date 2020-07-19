@@ -103,8 +103,8 @@ class Wagon{
             this.passengers.push(traveler)}
     }
     shouldQuarantine(){
-        for(let index = 0; index < this.passengers.length; index++){
-            if(this.passengers[index].isHealthy === false){
+        for(let counter = 0; counter < this.passengers.length; counter++){
+            if(this.passengers[counter].isHealthy === false){
                 return true
             }
         }
