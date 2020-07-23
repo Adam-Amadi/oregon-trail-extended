@@ -20,10 +20,10 @@ class Traveler {
     }
 
     eat() { 
-        if (this.food -= 1){ 
+        if (this.food <= 0){ 
             return this.isHealthy = false
         }   else {
-                this.food = 0
+                this.food -= 1
         
 
       }
@@ -60,7 +60,7 @@ class Hunter extends Traveler{
         this.food += 5
     }
     eat () {
-        if (this.food -= 2){ 
+        if (this.food >= 2){this.food -= 2
             return this.isHealthy = false
         }   else {
                 this.food = 0
